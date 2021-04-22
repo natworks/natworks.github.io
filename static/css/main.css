@@ -1,0 +1,203 @@
+html, body {
+  /* IE 10-11 didn't like using min-height */
+  height: 100%;
+  background-color: #FFFFFF;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000027;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+}
+.footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 5px;
+  text-align: center;
+  font-size: x-small;
+}
+
+@font-face {
+  font-family: 'MB';
+  src: url('fonts/MarkBook.otf') format('opentype');
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'MBI';
+  src: url('fonts/MarkBookItalic.otf') format('opentype');
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'MR';
+  src: url('/static/fonts/MarkRegular.otf') format('opentype');
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'MRI';
+  src: url('fonts/MarkRegularItalic.otf') format('opentype');
+  font-style: normal;
+  font-stretch: normal;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #F7F1F1;
+  border-bottom: 1px solid #fff;
+}
+span.time, span.categories {
+  color: #ADADAD;
+  margin-bottom: 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+h1, h2, h3 {
+  color: #696969;
+  font-weight: normal;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+h2, h3 {
+  margin-bottom: 5px;
+}
+a, a:link, a:active {
+  text-decoration: none;
+  color: #000027;
+}
+a:hover {
+  color: #B3B3B3;
+  text-decoration: underline;
+}
+
+/* Layout
+.main-layout {
+  background: #fff;
+} */
+.sidebar-nav {
+  margin: 0;
+  padding: 0;
+}
+.sidebar-nav li {
+  margin: 0;
+  list-style: none;
+}
+.sidebar-nav li::before {
+  content: "»";
+  margin-right: .5em;
+}
+
+/* Content */
+div.content pre {
+  background: #333333;
+  padding: 10px;
+  color: #FFF;
+  overflow-x: auto;
+  /* font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; */
+  font-size: 12px;
+  border: none;
+}
+.post a{
+  color: darkred;
+}
+
+div.post-content .btn-tags {
+  margin-bottom: 3px;
+}
+
+/* Left column */
+div.col-sm-3 {
+  margin-top: 100px;
+  font-size: 11px;
+  color: #666;
+}
+div.col-sm-3 strong {
+  font-size: 16px;
+  color: #4A4A4A;
+  font-weight: normal;
+}
+div.col-sm-3 div.profile-about {
+  margin-top: 10px;
+  color: #8C8C8C;
+}
+
+/* Pagination */
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+.PageNavigation .next {
+  text-align: right;
+}
+.PageNavigation .prev {
+  text-align: left;
+}
+
+/* Social Icons */
+.social{
+  display: block;
+  margin: 10px 0;
+}
+.social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.social li a {
+  font-size: 16px;
+  color: #969394;
+}
+.social li a:hover {
+  color: #6D6D6D;
+}
+
+.share-page {
+  padding: 10px 10px 5px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.post-content img,
+.content img {
+  max-width: 100%
+}
+
+/* Responsive Conditional */
+@media (min-width: 1024px) {
+  .fixed-condition {
+    position: fixed;
+    max-width: 255px;
+  }
+  .main-layout{
+    min-width: 850px;
+  }
+  .footer{
+    min-width: 850px;
+  }
+}
+@media (max-width: 768px) {
+  div.col-sm-3 {
+    margin-top: 30px;
+  }
+}

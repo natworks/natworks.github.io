@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Hello"
+date:   2021-04-22 23:01:00 +0700
+categories: [beginnings]
+---
+
+Hello world, I guess. Current blog to-do list:
+* add photos tab
+* add an actual post
+
+I'm hoping to use this space to document some of my trips and other things I read/learn along the way. Low expectation is key.

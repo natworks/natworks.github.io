@@ -1,0 +1,43 @@
+title: Blog
+description: Blog
+author: Nat
+github: https://github.com/natworks
+about: A wandering engineer. Often found cycling. Occasionally found writing code of questionable quality. 
+google_analytics: UA-115571481-1
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+# urls:
+#     - text: About Me
+#       url: /about/
+    # - text: Photos
+    #   url: /photos/
+
+social:
+    - icon: "/static/img/twitter.png"
+      link: "https://twitter.com/natwrks"
+    - icon: "/static/img/git.png"
+      link: "https://github.com/natworks"
+
+url: "https://natworks.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
